@@ -4,13 +4,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="timedate.js" type="text/javascript"></script>
 <link rel="stylesheet" href="styles.css">
 <!--  to pokazuje w przeglądarce na title barze-->
 <title>Moje hobby to fotografia</title>
 </head>
 <!-- a to się wyświetla -->
-<body>
-<h1>Fotografia moja pasja</h1>
+<body onload="startclock()">
+<div id="zegarek"></div>
+<div id="data"></div>
+<h1 id="header1">Fotografia moja pasja</h1>
 <nav>
     <ul>
         <li><a href="strona2.html">Strona2</a></li>
@@ -21,9 +24,9 @@
     </ul>
 </nav>
 <p>kwiatek</p>
-<img src="kwiatek.png">
+<img src="photos/kwiatek.png">
 <h2>
-headline 2
+Screenshoty z gierek
 </h2>
 <nav>
 <p id="sec1"> 
@@ -40,12 +43,12 @@ headline 2
 <h2>tabelka słodkich psiaków</h2>
 <table>
   <tr>
-    <td class="tabelka"><img src="photos/doge1.JPG" width="160" height="80"></td>
-    <td class="tabelka"><img src="doge2.JPG" width="160" height="80"></td>
+    <td class="tabelka"><img src="photos/doge1.JPG" ></td>
+    <td class="tabelka"><img src="photos/doge2.JPG" ></td>
   </tr>
   <tr>
-    <td class="tabelka"><img src="photos/doge3.JPG" width="160" height="80"></td>
-    <td class="tabelka"><img src="photos/doge4.JPG" width="160" height="80"></td>
+    <td class="tabelka"><img src="photos/doge3.JPG" ></td>
+    <td class="tabelka"><img src="photos/doge4.JPG" class="obroc" ></td>
   </tr>
 </table>
 </body>
