@@ -1,6 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+table{
+    width:60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
 .tabelka {
-    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+.tableka img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 body {
+    margin: 0;
+    padding: 0;
     background-color: #ccc;
+}
+#zegarek, #data {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#zegarek, #data{
+    display: block;
+    width: 100%;
+}
+#zegarek {
+    font-size: 2em;
+    margin-top: 20px;
+}
+#data {
+    font-size: 1.2em;
+    color: #555;
+}
+#header1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.obroc{
+    transform: rotate(90deg);
+  transform-origin: center center; 
+  width: 100%;        
+  height: auto;       
+  display: block;
+  margin: auto;
+  object-fit: contain; 
 }
