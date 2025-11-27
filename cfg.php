@@ -1,14 +1,14 @@
 <?php
-// Połączenie z bazą danych MySQL
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "moja_strona";
+    $dbhost = 'localhost';
+    $dbuser = 'root';
+    $dbpass = '';
+    $baza = 'moja_strona';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+    $link = mysqli_connect($dbhost, $dbuser, $dbpass);
+    if (!$link) echo '<b>przerwane połączenie </b>';
+    if(!mysqli_select_db($link, $baza)) echo 'nie wybrano bazy';
 
-// Sprawdzenie połączenia
-if ($conn->connect_error) {
-    die("<p class='error'>Błąd połączenia z bazą danych: " . $conn->connect_error . "</p>");
-}
+    $login = 'admin@root.com';
+    $pass = 'bombo';
+    
 ?>
