@@ -1,16 +1,15 @@
 <?php
 /**
  * Główny plik indeksowy projektu.
- * Wersja: v1.9 (z poprawką odświeżania)
  */
 
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 include('cfg.php');
-include('koszyk.php'); // Dołączamy logikę koszyka tutaj
+include('koszyk.php');
 include('contact.php');
 
 // =============================================
-// LOGIKA KOSZYKA (Musi być przed HTML!)
+// LOGIKA KOSZYKA
 // =============================================
 
 
@@ -119,9 +118,6 @@ if (isset($_POST['action'])) {
             // WIDOK SZCZEGÓŁOWY PRODUKTU
             // =========================================================
             if (isset($_GET['product_id'])) {
-                // ... (Ten fragment kodu pozostaje BEZ ZMIAN, jak w poprzedniej wersji) ...
-                // Skopiuj go z poprzedniego działającego kodu lub zostaw jak masz
-                // Żeby nie wydłużać kodu tutaj, skupiam się na widoku listy poniżej.
                 $id_prod = intval($_GET['product_id']);
                 $sql = "SELECT * FROM products WHERE id = $id_prod LIMIT 1";
                 $result = $conn->query($sql);

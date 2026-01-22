@@ -1,7 +1,5 @@
 <?php
-/**
- * Moduł obsługi koszyka sklepowego (v2.0 - Dark Mode Ready).
- */
+
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -88,7 +86,7 @@ function FinalizujZakup($link) {
 }
 
 /**
- * Wyświetla koszyk (Style przeniesione do CSS - klasa .cart-container)
+ * Wyświetla koszyk
  */
 function PokazKoszyk() {
     // Pusty koszyk
@@ -97,12 +95,9 @@ function PokazKoszyk() {
     }
 
     $suma = 0;
-    
-    // USUNĘLIŚMY style="background: #fff" - teraz używa klasy .cart-container z CSS
     $html = "<div class='cart-container'>";
-    $html .= "<h3>🛒 Twój Koszyk</h3>";
+    $html .= "<h3>Twój Koszyk</h3>";
     
-    // Tabela korzysta teraz ze stylów CSS dla table/th/td
     $html .= "<table>";
     $html .= "<tr>
                 <th>Produkt</th>

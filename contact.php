@@ -27,7 +27,7 @@ function PokazKontakt() {
 
             <button type='submit' 
                     style='width: 100%; padding: 15px; background: #3498db; color: white; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; transition: 0.3s;'>
-                Wyślij wiadomość 🚀
+                Wyślij wiadomość
             </button>
         </form>
         
@@ -62,7 +62,7 @@ function WyslijMailKontakt($odbiorca) {
 function PrzypomnijHaslo() {
     return "
     <div class='contact-container' style='max-width: 400px; margin: 50px auto; text-align: center;'>
-        <h3 style='color:inherit;'>Zapomniałeś hasła? 🔒</h3>
+        <h3 style='color:inherit;'>Zapomniałeś hasła?</h3>
         <form method='post' action='index.php?idp=contact' style='background: #1e1e1e; padding: 20px; border-radius: 10px; border: 1px solid #333;'>
             <input type='hidden' name='action' value='send_password_reset'>
             

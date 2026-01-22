@@ -1,12 +1,8 @@
 <?php
 /**
  * Moduł zarządzania kategoriami sklepu.
- * Wersja: v1.8
  * Zawiera funkcje CRUD dla kategorii (Dodaj, Usuń, Edytuj, Pokaż).
  */
-
-// Dołączenie konfiguracji (jeśli plik jest ładowany niezależnie)
-// include('../cfg.php'); 
 
 /**
  * Formularz dodawania nowej kategorii.
@@ -209,7 +205,6 @@ function UsunProdukt($link, $id) {
 
 /**
  * Edytuje produkt (Formularz + Zapis).
- * (Uproszczona wersja 2w1 dla oszczędności miejsca, normalnie rozdzielamy Form i Logic)
  */
 function EdytujProdukt($link, $id) {
     $id = intval($id);
